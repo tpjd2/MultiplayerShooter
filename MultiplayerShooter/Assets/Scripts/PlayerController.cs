@@ -24,11 +24,12 @@ public class PlayerController : NetworkBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Fire();
+            CmdFire();
         }
     }
 
-    void Fire()
+    [Command]
+    void CmdFire()
     {
         GameObject tiro =
             (GameObject) Instantiate(
@@ -38,6 +39,8 @@ public class PlayerController : NetworkBehaviour
                 );
         tiro.GetComponent<Rigidbody>().velocity =
             tiro.transform.forward * 6.0f;
+
+        NetworkServer.Spawn(tiro);
 
         Destroy(tiro, 2.0f);
     }

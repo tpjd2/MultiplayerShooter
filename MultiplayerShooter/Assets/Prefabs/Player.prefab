@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3201844525041866559}
   m_Layer: 0
   m_Name: Arma
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,9 +228,10 @@ GameObject:
   - component: {fileID: 3201844526261630079}
   - component: {fileID: 3201844526261630078}
   - component: {fileID: 5329778671045576292}
+  - component: {fileID: 666938962866120516}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -383,3 +384,16 @@ MonoBehaviour:
   projetilSpawn: {fileID: 3201844525078560334}
   velocidadeRotacao: 150
   velocidade: 3
+--- !u!114 &666938962866120516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201844526261630077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df305af2ddaeee645837c2400efe1624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 0
