@@ -399,6 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaAtual: 0
   barraVida: {fileID: 7101810883649635458}
+  respawn: 1
 --- !u!1 &3304850070373237055
 GameObject:
   m_ObjectHideFlags: 0
