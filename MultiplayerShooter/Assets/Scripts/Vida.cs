@@ -21,6 +21,11 @@ public class Vida : NetworkBehaviour
         }
     }
 
+    public int getVidaAtual()
+    {
+        return vidaAtual;
+    }
+
     public void Damage(int quantidade)
     {
         if (!isServer) return;
